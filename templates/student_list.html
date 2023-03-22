@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}Student List{% endblock %}
+{% block content %}
+
+<form action ="/student_list.html" method="POST">
+    <p>{{applicants_num_request}}</p>
+    <p><input type = "text" name="number"/></p>
+    <p>{{applicants_num_approved_request}}</p>
+    <p><input type = "text" name="number1"/></p>
+    <p><input type = "submit" name="Submit"/></p>
+
+
+{% if empty1 %}
+    <p>{{empty1}}</p>
+    {% endif %}
+{% if continuance %}
+    <p>{{continuance}}</p>
+    <form action ="/student_list.html" method="POST">
+    <p>{{warning10}}</p>
+    <p><input type = "text" name="number4"/></p>
+    <p><input type = "submit" name="Submit"/></p>
+    {% endif %}`
+
+
+
+
+
+        <p>IGNORE</p>
+
+
+
+{% endblock %}
